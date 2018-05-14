@@ -4,8 +4,13 @@
   "description": "",
   "private": true,
   "dependencies": {
+    "ali-oss": "^5.2.0",
     "egg": "^2.2.1",
-    "egg-scripts": "^2.5.0"
+    "egg-cors": "^2.0.0",
+    "egg-oss": "^1.1.0",
+    "egg-scripts": "^2.5.0",
+    "egg-security": "^2.2.2",
+    "stream-wormhole": "^1.0.3"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -28,7 +33,7 @@
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",
     "cov": "egg-bin cov",
-    "lint": "eslint .",
+    "lint": "eslint . --fix",
     "ci": "npm run lint && npm run cov",
     "autod": "autod"
   },
